@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap'">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <nav class="navbar navbar-expand-lg bg-light">
@@ -26,8 +27,11 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
-          <li class="nav-item ml-auto register">
-            <a class="nav-link" href="https://debtapp.netlify.app/">Register</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+          <li class="nav-item register">
+            <a class="nav-link reg" href="https://debtapp.netlify.app/">Log in</a>
           </li>
         </ul>
       </div>
@@ -35,17 +39,27 @@
   </nav>
 
 <body>
-    <header>
-      <h1>Capital Control</h1>
-      <p>Managing your financial future</p>
-    </header>
+  <header class="row align-items-center">
+    <div class="col-6 ms-5">
+        <h1>Capital Control</h1>
+        <p>Managing your financial future</p>
+    </div>
+    <div class="col-6 text-center">
+      <a href="https://debtapp.netlify.app/"><img class="img-fluid h-75 mt-5" src="https://i.postimg.cc/SQd1ZjBW/Screenshot-2023-01-24-144218.png" alt="Capital Control"></a>
+        
+    </div>
+</header>
+
     <main class="m-auto">
-        <section class="m-auto my-5">
+        <section class="m-auto">
             <div class="about-us-img">
                 <img src="https://i.postimg.cc/MZCGgfWM/DALL-E-2023-01-23-16-01-15-group-of-people-saving-money.png" alt="About Us">
             </div>
             <h2>About Us</h2>
-            <p>Capital Control is a financial management company that specializes in helping individuals and businesses achieve their financial goals.</p>
+            <p>Capital Control is a financial management company that specializes in helping individuals and businesses achieve their financial goals. We understand that managing your finances can be a daunting task, and we're here to help. Our team of experienced professionals are dedicated to providing personalized financial solutions that will help you reach your goals. Whether you're struggling with debt, trying to improve your credit score, or simply looking to plan for your financial future, we can help.
+              <br>
+              <br>
+            We also offer a range of financial resources and tools where it can found in our application. It includes budgeting and financial planning advice, that can help you take control of your finances. We believe that financial freedom is within reach for everyone, and we're committed to helping you achieve it. Contact us today to schedule a free consultation and take the first step towards your financial goals.</p>
         </section>
         <section class="m-auto my-5">
             <div class="debt-stats-img">
@@ -60,18 +74,117 @@
             <br>
             Additionally, the National Credit Act (NCA) in South Africa, which was implemented in 2007, aims to protect consumers from reckless lending, but it was reported that many South Africans still fall into debt trap. A study by the Financial Sector Conduct Authority (FSCA) in 2019 revealed that around 70% of credit active consumers in South Africa were in arrears on at least one credit agreement.</p>
         </section>
-      <section class="m-auto" id="contact">
-        <h2>Contact Us</h2>
-        <form action="submit-form.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"><br>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea><br>
-          <input type="submit" value="Submit">
-        </form>
+        <section id="plans">
+          <h2>Services</h2>
+          <div class="plan">
+              <h3></h3>
+              <ul>
+                  <li>Unlimited credit counseling sessions</li>
+                  <li>Debt consolidation and management services</li>
+                  <li>Negotiations with creditors to lower interest rates and monthly payments</li>
+                  <li>Access to financial resources and tools</li>
+                  <li>Priority customer support</li>
+              </ul>
+          </div>
       </section>
+
+
+      <section id="our-team">
+        <h2>Our Team</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://i.postimg.cc/sx4nJHft/DSC-3623.jpg" alt="Team Member 1">
+                    <div class="card-body">
+                        <h4 class="card-title">Lazola</h4>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://i.postimg.cc/FFVG8qm6/DSC-3587.jpg" alt="Team Member 2">
+                    <div class="card-body">
+                        <h4 class="card-title">Maxwill</h4>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://i.postimg.cc/D0n6mQQ5/DSC-3553.jpg" alt="Team Member 3">
+                    <div class="card-body">
+                        <h4 class="card-title">Sipha</h4>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://i.postimg.cc/MTytW3Bv/DSC-3562-1.jpg" alt="Team Member 4">
+                    <div class="card-body">
+                        <h4 class="card-title">Javier</h4>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://i.postimg.cc/1txJ11fk/DSC-3517.jpg" alt="Team Member 5">
+                    <div class="card-body">
+                        <h4 class="card-title">Likay</h4>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="team-member-6.jpg" alt="Team Member 6">
+                    <div class="card-body">
+                    <h4 class="card-title">Imraan</h4>
+                    <p class="card-text"></p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    </section>
+    
+    
+      
+      
+
+                    
+
+<section class="m-auto text-center" id="contact">
+    <h2 class="text-uppercase font-weight-bold" style="font-family: 'Montserrat', sans-serif;">Contact Us</h2>
+    <p class="lead" style="font-family: 'Montserrat', sans-serif;">We're here to help you with any questions or concerns you may have.</p>
+    <form action="submit-form.php" method="post">
+        <div class="form-group m-auto">
+            <label for="name" style="font-family: 'Montserrat', sans-serif;">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group m-auto">
+            <label for="email" style="font-family: 'Montserrat', sans-serif;">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group m-auto my-3">
+            <label for="message" style="font-family: 'Montserrat', sans-serif;">Message:</label>
+            <textarea class="form-control row-12" id="message" name="message" placeholder="Enter your message"></textarea>
+            </div>
+            </form>
+            <button type="submit" class="btn btn-success text-uppercase" style="font-family: 'Montserrat', sans-serif;">Submit</button>
+            <div class="mt-4" style="font-family: 'Montserrat', sans-serif;">
+            <p>You can also reach us at:</p>
+            <p><i class="fas fa-phone"></i> 555-555-5555</p>
+            <p><i class="fas fa-envelope"></i> info@capitalcontrol.com</p>
+            </div>
+            
+            </section>
+
+                  
     </main>
     <!-- <footer>
       <p>Copyright Capital Control</p>
