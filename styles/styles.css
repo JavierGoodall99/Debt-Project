@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #979494a2;
+    background-color: #cfcacaed;
     
 }
 
@@ -89,11 +89,24 @@ header p {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+.about-us {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.about-us-info, .about-us-img  {
+    flex: 50%;
+}
+
+.about-us-info {
+
+}
 
 
 /* Style the image container */
 .about-us-img {
-    width: 25%;
+    width: 100%;
     float: left;
     margin-right: 20px;
 }
@@ -104,6 +117,11 @@ header p {
     border-radius: 10px;
 }
 
+.text1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
 /* Style the text container */
 .about-us-text {
     width: 70%;
@@ -112,19 +130,20 @@ header p {
 
 .card-img-top {
     width: 300px;
-    height: 200px;
+    height: 300px;
 }
 
 section {
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 1em;
     padding: 1em;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     box-shadow: 2px 2px 5px #ccc;
     animation: section-animation 1s ease-in-out;
     grid-area: content;
     padding: 20px;
+    line-height: 50px;
 }
 
 @keyframes section-animation {
@@ -141,7 +160,7 @@ section {
 
 /* Style the image container */
 .debt-stats-img {
-    width: 30%;
+    width: 50%;
     float: left;
     margin-right: 20px;
 }
@@ -221,4 +240,4 @@ input[type="submit"] {
 /* Add some hover effect to the submit button */
 input[type="submit"]:hover {
     background-color: #3e8e41;
-} */
+} 
